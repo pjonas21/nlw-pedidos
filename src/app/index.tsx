@@ -1,10 +1,13 @@
-import { CategoryButton } from '@/components/category-button';
-import { Header } from '@/components/header';
 import React, { useState, useRef } from 'react';
 import { View, Text, FlatList, SectionList } from 'react-native';
-import { CATEGORIES, MENU, ProductProps } from "@/utils/data/products"
-import { Product } from '@/components/product';
+
 import { Link } from "expo-router"
+
+import { CategoryButton } from '@/components/category-button';
+import { Header } from '@/components/header';
+import { Product } from '@/components/product';
+
+import { CATEGORIES, MENU, ProductProps } from "@/utils/data/products"
 import { useCartStore } from '@/stores/cart-store';
 
 

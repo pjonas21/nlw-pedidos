@@ -1,15 +1,19 @@
-import { Header } from "@/components/header";
-import { Alert, ScrollView, Text, View, Linking } from "react-native";
-import { Product } from "@/components/product";
-import { ProductCartProps, useCartStore } from "@/stores/cart-store";
-import { formatCurrency } from "@/utils/functions/format-currency";
-import { Input } from "@/components/input";
-import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
-import { Button } from "@/components/button";
-import { Feather } from "@expo/vector-icons";
-import { LinkButton } from "@/components/link-button";
 import { useState } from "react";
+import { Alert, ScrollView, Text, View, Linking } from "react-native";
+import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
+import { Feather } from "@expo/vector-icons";
 import { useNavigation } from "expo-router";
+
+import { Header } from "@/components/header";
+import { Product } from "@/components/product";
+import { Input } from "@/components/input";
+import { Button } from "@/components/button";
+import { LinkButton } from "@/components/link-button";
+
+import { ProductCartProps, useCartStore } from "@/stores/cart-store";
+
+import { formatCurrency } from "@/utils/functions/format-currency";
+
 
 const PHONE_NUMBER = "YOUR_PHONE_NUMBER"
 
